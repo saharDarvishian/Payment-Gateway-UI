@@ -13,7 +13,6 @@ header {
   padding: 21px 0 15px;
   display: flex;
   justify-content: space-between;
-  
 }
 .zarin-logo {
   margin-right: 22px;
@@ -56,3 +55,35 @@ main {
   background-image: linear-gradient(135deg, #21254e, #2b4a83);
 }
 
+@media (max-width: 1200px) {
+  header {
+    width: 940px;
+  }
+  .zarin-logo {
+    margin-right: 0;
+  }
+}
+@media (max-width: 990px) {
+  .nav-list li:last-child {
+    display: none;
+  }
+  header {
+    width: auto;
+    padding: 29px 20px;
+  }
+  .zarin-logo {
+    margin: 0 20px;
+  }
+  .drop-down-nav li {
+    margin: 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+  header {
+    padding: 10px 10px 15px 5px;
+    width: auto;
+  }
+}
