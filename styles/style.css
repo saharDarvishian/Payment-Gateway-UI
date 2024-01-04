@@ -172,7 +172,7 @@ header {
 .banner-btns a:first-child {
   background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0
     no-repeat padding-box;
-  padding: .5px 14px;
+  padding: 0.5px 14px;
   margin-left: 10px;
   color: #000;
 }
@@ -181,10 +181,143 @@ header {
   background-color: #435a8a;
   padding: 1px 14px;
 }
+.cards {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+  margin: auto;
+  padding: 50px 0 50px;
+  /* height: 400px; */
+  /* border: 1px solid black; */
+}
 
+.text-box {
+  width: 50%;
+  border: 1px solid black;
+padding-left: 80px;
+
+}
+.text-box h2:first-child {
+  margin-bottom: 5px;
+  color: #747480;
+  font-family: "YekanBakhMedium";
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 0.18px;
+}
+.text-box h2:nth-last-child(4) {
+  color: #303030;
+  font-family: "YekanBakhHeavy";
+  font-weight: 900;
+  font-size: 32px;
+}
+.text-box p {
+  line-height: 40px;
+  color: #303030;
+  text-align: justify;
+  font-family: "YekanBakhMedium";
+  letter-spacing: -0.5px;
+}
+.horizontal-line {
+  background-color: silver;
+  height: 1px;
+  margin: 30px 0;
+}
+.card-btn {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+.card-btn a {
+  text-decoration: none;
+}
+.card-btn a:first-child {
+  display: inline-block;
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0
+    no-repeat padding-box;
+  color: #000;
+  font-family: "YekanBakhMedium";
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 7px 14px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+.card-btn a:last-child {
+  background-color: rgba(232, 239, 254, 0.6);
+  color: #28457b;
+  display: flex;
+  border-radius: 10px;
+  padding: 7px 14px;
+  font-family: "YekanBakhMedium";
+  font-size: 14px;
+  font-weight: 600;
+}
+.card-btn a:last-child img {
+  /* padding-top: 10px; */
+  display: inline-block;
+  align-items: center;
+  margin-right: 5px;
+  width: 22px;
+}
+.img-box-right, .img-box-left{
+  /* background-color: #fbf6d9; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* padding-top: 50px; */
+  border: 1px solid black;
+}
+.img-box-right { 
+  justify-content: flex-start;
+  background-color:#ffd900;
+}
+.img-box-left {
+  justify-content: flex-start;
+}
+
+
+.img1 {
+  width: 500px;
+  height: 500px;
+  /* border: 1px solid black; */
+  margin-right: -50px;
+  margin-top: -50px;
+  border: 1px solid red;
+  background-color: #747480;
+}
+.img2 {
+  /* width: 500px;
+  height: 500px; */
+  border: 1px solid black;
+  /* margin-right: -90px; */
+  /* padding-top: 140px; */
+}
+.img-box .img3 {
+  width: 400px;
+  /* height: 500px; */
+  border: 1px solid black;
+  /* padding-bottom: -30px; */
+  /* margin-right: -90px; */
+}
+.img-box .img4 {
+  width: 500px; 
+   height: 500px;
+  border: 1px solid black;
+  /* margin-right: -90px; */
+}
+.img-box .img5 {
+  /* width: 400px; */
+  /* height: 500px; */
+  border: 1px solid black;
+  /* margin-right: -90px; */
+}
 
 @media (max-width: 1200px) {
-  header, .banner {
+  header,
+  .banner {
     width: 940px;
   }
   .zarin-logo {
