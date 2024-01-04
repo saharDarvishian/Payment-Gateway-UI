@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  letter-spacing: -0.5px;
+}
 header {
   position: sticky;
   top: 0;
@@ -13,6 +16,7 @@ header {
   padding: 21px 0 15px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   /* background-color: antiquewhite; */
 }
 .zarin-logo {
@@ -185,7 +189,7 @@ header {
   width: 1170px;
   display: flex;
   justify-content: space-between;
-  align-items:flex-start;
+  align-items: flex-start;
   margin: auto;
   padding: 50px 0 50px;
   /* height: 400px; */
@@ -194,9 +198,8 @@ header {
 
 .text-box {
   width: 50%;
-  border: 1px solid black;
-padding-left: 80px;
-
+  /* border: 1px solid black; */
+  padding-left: 80px;
 }
 .text-box h2:first-child {
   margin-bottom: 5px;
@@ -261,23 +264,23 @@ padding-left: 80px;
   margin-right: 5px;
   width: 22px;
 }
-.img-box-right, .img-box-left{
+.img-box-right,
+.img-box-left {
   /* background-color: #fbf6d9; */
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   /* padding-top: 50px; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
-.img-box-right { 
+.img-box-right {
   justify-content: flex-start;
-  background-color:#ffd900;
+  /* background-color:#ffd900; */
 }
 .img-box-left {
   justify-content: flex-start;
 }
-
 
 .img1 {
   width: 500px;
@@ -285,34 +288,101 @@ padding-left: 80px;
   /* border: 1px solid black; */
   margin-right: -50px;
   margin-top: -50px;
-  border: 1px solid red;
-  background-color: #747480;
+  /* border: 1px solid red;
+  background-color: #747480; */
 }
 .img2 {
   /* width: 500px;
   height: 500px; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* margin-right: -90px; */
   /* padding-top: 140px; */
 }
 .img-box .img3 {
   width: 400px;
   /* height: 500px; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* padding-bottom: -30px; */
   /* margin-right: -90px; */
 }
 .img-box .img4 {
-  width: 500px; 
-   height: 500px;
-  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  /* border: 1px solid black; */
   /* margin-right: -90px; */
 }
 .img-box .img5 {
   /* width: 400px; */
   /* height: 500px; */
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* margin-right: -90px; */
+}
+.features {
+  display: flex;
+  width: 1170px;
+  margin: 32px auto;
+  /* border: 1px solid black; */
+}
+.features-right { 
+  width: 35%;
+  /* border: 1px solid black; */
+}
+.features-right h2 {
+  color: #303030;
+  font-size: 32px;
+  font-family: "YekanBakhHeavy";
+}
+.features-right p {
+  font-family: "YekanBakhMedium";
+  font-size: 16px;
+  color: #303030;
+  line-height: 40px;
+  margin-top: 48px;
+  padding-left: 100px;
+}
+.features-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px;
+  width: 65%;
+  /* border: 1px solid black; */
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.div1,
+.div2,
+.div3,
+.div4 {
+  /* width: 60%; */
+  /* border: 1px solid black; */
+  /* border-bottom: 1px solid #e0e4e7; */
+}
+.div1, .div2 {
+  border-bottom: 1px solid #e0e4e7;
+}
+.div1, .div3 { border-left: 1px solid #e0e4e7; }
+/* .border-left {border-left: 1px solid #e0e4e7;} */
+.features-left img {
+  width: 50px;
+}
+.features-left span {
+  color: #303030;
+  font-size: 24px;
+  font-family: "YekanBakhHeavy";
+  margin-right: 15px;
+}
+.features-left p {
+  font-family: "YekanBakhMedium";
+  font-size: 16px;
+  color: #303030;
+  line-height: 36px;
+  margin-top: 21px;
+  max-width: 300px;
+  margin-bottom: 41px;
+  color: #2d3436;
 }
 
 @media (max-width: 1200px) {
