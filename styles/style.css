@@ -323,7 +323,7 @@ header {
   margin: 32px auto;
   /* border: 1px solid black; */
 }
-.features-right { 
+.features-right {
   width: 35%;
   /* border: 1px solid black; */
 }
@@ -360,10 +360,14 @@ header {
   /* border: 1px solid black; */
   /* border-bottom: 1px solid #e0e4e7; */
 }
-.div1, .div2 {
+.div1,
+.div2 {
   border-bottom: 1px solid #e0e4e7;
 }
-.div1, .div3 { border-left: 1px solid #e0e4e7; }
+.div1,
+.div3 {
+  border-left: 1px solid #e0e4e7;
+}
 /* .border-left {border-left: 1px solid #e0e4e7;} */
 .features-left img {
   width: 50px;
@@ -383,6 +387,40 @@ header {
   max-width: 300px;
   margin-bottom: 41px;
   color: #2d3436;
+}
+.join-us {
+  width: 1170px;
+  margin: 30px auto;
+  border: 1px solid #c3c6cd;
+  border-radius: 20px;
+  padding: 40px 0;
+  text-align: center;
+}
+.join-us span:first-child {
+  color: #303030;
+  font-size: 28px;
+  font-family: "YekanBakhHeavy";
+  display: block;
+}
+.join-us span:nth-last-child(2) {
+  margin-top: 9px;
+  color: #747480;
+  font-size: 22px;
+  font-family: "YekanBakhMedium";
+  display: block;
+}
+.join-us a {
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0
+    no-repeat padding-box;
+  margin-top: 17px;
+  font-size: 14px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  display: inline-block;
+  font-family: "iranyekanwebmedium";
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
 }
 
 @media (max-width: 1200px) {
