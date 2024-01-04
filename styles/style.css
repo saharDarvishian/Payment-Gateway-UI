@@ -13,6 +13,7 @@ header {
   padding: 21px 0 15px;
   display: flex;
   justify-content: space-between;
+  /* background-color: antiquewhite; */
 }
 .zarin-logo {
   margin-right: 22px;
@@ -50,17 +51,150 @@ header {
 .nav-list li:last-child:hover {
   background-color: #fbf6d9;
 }
-main {
-  height: 1000px;
-  background-image: linear-gradient(135deg, #21254e, #2b4a83);
+
+.burgur-menu {
+  /* background-color: aquamarine; */
+  width: 692px;
+  display: none;
+}
+.top-div {
+  padding: 20px 20px 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+.top-div img {
+  width: 20px;
+}
+.items {
+  padding: 30px 15px 15px;
+}
+.items li {
+  list-style-type: none;
+  font-family: "iranyekanwebregular";
+  /* margin-bottom: 15px; */
+  padding: 8px 0;
+}
+.items li a {
+  text-decoration: none;
+  color: #333;
+}
+.items .horizontal-line {
+  background-color: #dfe1e4;
+  height: 1px;
+  width: 90%;
+  margin: 8px 0;
+}
+.bottom-div {
+  background-color: #eee;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+}
+.bottom-div a {
+  color: #28457b;
+  font-family: "iranyekanwebmedium";
+  text-decoration: none;
+  font-size: 16px;
+}
+.bottom-div img {
+  margin: 4px 3px 0 0;
+}
+.product-items {
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align-content:space-between; */
+  row-gap: 15px;
+  padding: 15px;
+  font-family: "iranyekanwebmedium";
+  color: #303030;
+  width: 400px;
+  font-size: 10px;
+  font-weight: 300;
+  border-radius: 15px;
+  letter-spacing: -0.5px;
+  box-shadow: 0 -5px 0 #ffe422;
+  margin-top: 15px;
+  display: none;
+}
+.product-items div {
+  width: 50%;
+}
+.product-items span {
+  display: block;
 }
 
+.banner {
+  width: 1170px;
+  background-image: linear-gradient(135deg, #21254e, #2b4a83);
+  border-radius: 20px;
+  margin: 15px auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 124px 60px 50px;
+}
+.right-banner {
+  width: 50%;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+  letter-spacing: -0.4px;
+}
+.right-banner span {
+  font-family: "YekanBakhHeavy";
+  font-size: 32px;
+  display: block;
+}
+.right-banner p {
+  font-family: "YekanBakhMedium";
+  margin-top: 18px;
+}
+.left-banner {
+  width: 50%;
+}
+.left-banner img {
+  width: 500px;
+}
+.banner-btns {
+  margin: 40px 0;
+}
+.banner-btns a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "YekanBakhBold";
+  border-radius: 10px;
+  margin-top: 17px;
+}
+.banner-btns a:first-child {
+  background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0
+    no-repeat padding-box;
+  padding: .5px 14px;
+  margin-left: 10px;
+  color: #000;
+}
+.banner-btns a:last-child {
+  color: #fff;
+  background-color: #435a8a;
+  padding: 1px 14px;
+}
+
+
 @media (max-width: 1200px) {
-  header {
+  header, .banner {
     width: 940px;
   }
   .zarin-logo {
     margin-right: 0;
+  }
+  .banner {
+    padding: 40px 30px 20px;
+  }
+  .banner .left-banner img {
+    width: 400px;
   }
 }
 @media (max-width: 990px) {
@@ -77,6 +211,16 @@ main {
   .drop-down-nav li {
     margin: 0 10px;
   }
+  .banner {
+    width: 902px;
+  }
+  .banner .left-banner {
+    display: none;
+  }
+  .banner .right-banner {
+    width: 100%;
+    text-align: center;
+  }
 }
 @media (max-width: 768px) {
   nav {
@@ -85,5 +229,9 @@ main {
   header {
     padding: 10px 10px 15px 5px;
     width: auto;
+  }
+  .zarin-logo::after {
+    content: url("../images/hamburger.svg");
+    width: 20px;
   }
 }
