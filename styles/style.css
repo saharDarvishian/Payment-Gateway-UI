@@ -422,6 +422,96 @@ header {
   color: #000;
   font-size: 14px;
 }
+.support {
+  background: #fbf6f1;
+  border-radius: 35px;
+  margin: 0 auto 50px;
+  padding: 0 30px;
+  height: 70px;
+  width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.support span {
+  font-family: "yekanBakhHeavy";
+  font-size: 20px;
+  color: #303030;
+}
+.support-number {
+  color: #21457f;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.support div:last-child span {
+  color: #21457f;
+  font-size: 22px;
+  font-family: "yekanBakhBold";
+}
+.support div:last-child {
+  display: flex;
+  align-items: center;
+}
+.support div:last-child img {
+  width: 22px;
+  margin-right: 10px;
+}
+.pipe {
+  margin: 0 20px;
+  font-family: "yekanBakhHeavy";
+  font-size: 20px;
+  color: #303030;
+}
+footer {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto 150px;
+}
+.footer-right {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-right .colmn {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+}
+.colmn span {
+  font-size: 20px;
+  color: #303030;
+  font-family: "YekanBakhHeavy";
+  margin-bottom: 27px;
+}
+.colmn span:hover {
+  color: #21457f;
+}
+.colmn a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: "YekanBakhMedium";
+  line-height: 40px;
+}
+.footer-left span {
+  margin-bottom: 22px;
+  font-size: 18px;
+  color: #303030;
+  font-family: "YekanBakhHeavy";
+  display: block;
+}
+.footer-left div img {
+  border-radius: 12px;
+  margin-right: 15px;
+  background: #eff4fe;
+  display: inline-block;
+  padding: 10px;
+}
+.footer-left .signiture {
+  text-align: center;
+  display: inline-block;
+  margin: 30px auto 0 ;
+}
 
 @media (max-width: 1200px) {
   header,
