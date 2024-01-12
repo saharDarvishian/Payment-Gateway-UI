@@ -1,38 +1,101 @@
 @media (max-width: 1200px) {
-    header {
-      width: 940px;
-    }
-    .zarin-logo {
-      margin-right: 0;
-    }
+  header {
+    width: 940px;
   }
-  @media (max-width: 990px) {
-    .nav-btn {
-      display: none;
-    }
-    header {
-      width: auto;
-      padding: 29px 20px;
-    }
-    .zarin-logo {
-      margin: 0 20px;
-    }
+  .zarin-logo {
+    margin-right: 0;
   }
-  @media (max-width: 768px) {
-    nav {
-      display: none;
-    }
-    header {
-      padding: 10px 10px 15px 5px;
-      width: auto;
-    }
-    .zarin-logo::after {
-      content: url("../images/hamburger.svg");
-      width: 20px;
-    }
-    .hamburger-icon {
-      display: block;
-    }
+  .banner {
+    width: 940px;
+    box-sizing: border-box;
   }
-
-  
+  .banner-image img {
+    width: 450px;
+  }
+  .banner {
+    padding: 70px 30px 140px 30px;
+  }
+}
+@media (max-width: 990px) {
+  header {
+    margin: auto;
+    width: 100%;
+    padding: 21px 50px 21px 70px;
+    box-sizing: border-box;
+    justify-content: space-between;
+  }
+  header.scrolled {
+    padding: 10px 50px 10px 70px;
+  }
+  .logo {
+    justify-content: flex-start;
+  }
+  .logo img {
+    margin: 5px 0;
+  }
+  .nav-btn {
+    display: none;
+  }
+  .nav-list li a {
+    color: black;
+  }
+  .nav-list li {
+    margin: 10px;
+  }
+  .banner {
+    width: auto;
+    margin: 10px 40px;
+    padding: 30px 30px 120px 30px;
+  }
+  .banner-image img {
+    display: none;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner-text p {
+    font-size: 1.15rem;
+    margin-top: 6px;
+  }
+  .banner-button {
+    margin-top: 20px;
+  }
+  .go-down {
+    bottom: 49px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    padding: 12px 20px 12px 5px;
+    width: auto;
+  }
+  header.scrolled {
+    padding: 12px 20px 12px 5px;
+  }
+  .zarin-logo::after {
+    content: url("../images/hamburger.svg");
+    width: 20px;
+  }
+  nav {
+    display: none;
+  }
+  .hamburger-icon {
+    display: block;
+  }
+  .banner {
+    margin: 0 7px;
+    padding: 40px 25px 100px 25px;
+  }
+  .go-down {
+    bottom: 39px;
+  }
+}
+@media (max-width: 575px) {
+  .banner-text h3 {
+    font-size: 1.3rem;
+    text-align: right;
+  }
+  .banner-text p {
+    font-size: 1rem;
+  }
+}

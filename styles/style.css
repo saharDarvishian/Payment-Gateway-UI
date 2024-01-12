@@ -7,6 +7,7 @@ body {
   letter-spacing: -0.5px;
   font-family: "iranyekanwebregular";
 }
+/* header section */
 header {
   display: flex;
   justify-content: space-between;
@@ -45,6 +46,7 @@ header.scrolled {
   text-decoration: none;
   color: #303030;
   font-size: 14px;
+  font-family: "YekanBakhMedium";
 }
 .nav-btn a {
   color: #28457b;
@@ -162,7 +164,7 @@ header.scrolled {
   color: black;
   display: inline-block;
   padding: 3px 0;
-  font-family: "YekanBakhMedium"
+  font-family: "YekanBakhMedium";
 }
 .hamburger-menu-items .horizontal-line {
   background-color: #dfe1e4;
@@ -183,65 +185,83 @@ header.scrolled {
   font-size: 0.85rem;
 }
 .more-item img {
-width: 15px;
+  width: 15px;
   margin-right: 5px;
 }
+/* banner section */
 .banner {
-  width: auto;
+  width: 1050px;
   background-image: linear-gradient(135deg, #21254e, #2b4a83);
   border-radius: 20px;
-  margin: 10px auto;
+  margin: 20px auto;
   border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 124px 60px 50px;
+  justify-content: space-between;
+  padding: 100px 60px 50px;
 }
-.right-banner {
-  width: 50%;
-  font-size: 18px;
-  line-height: 40px;
-  color: #fff;
+.banner-text {
   letter-spacing: -0.4px;
 }
-.right-banner span {
+.banner-text h3 {
   font-family: "YekanBakhHeavy";
-  font-size: 32px;
-  display: block;
+  font-size: 2rem;
+  color: #fff;
 }
-.right-banner p {
+.banner-text p {
   font-family: "YekanBakhMedium";
   margin-top: 18px;
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
 }
-.left-banner {
-  width: 50%;
-}
-.left-banner img {
+.banner-image img {
   width: 500px;
 }
-.banner-btns {
-  margin: 40px 0;
+.banner-button {
+  margin-top: 60px;
 }
-.banner-btns a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 16px;
-  font-family: "YekanBakhBold";
-  border-radius: 10px;
-  margin-top: 17px;
-}
-.banner-btns a:first-child {
+.banner-button a:first-child {
   background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0
     no-repeat padding-box;
-  padding: 0.5px 14px;
+  padding: 6px 14px;
   margin-left: 10px;
   color: #000;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "YekanBakhBold";
 }
-.banner-btns a:last-child {
+.banner-button a:last-child {
   color: #fff;
   background-color: #435a8a;
-  padding: 1px 14px;
+  padding: 6px 14px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: "YekanBakhBold";
 }
+.go-down {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 58px;
+}
+.go-down div {
+  background-image: url(../images/arrowbottom.svg);
+  width: 164px;
+  height: 78px;
+}
+.go-down img {
+  width: 15px;
+  position: relative;
+  top: -60px;
+}
+/* card section */
 .cards {
   width: 1170px;
   display: flex;
@@ -578,7 +598,7 @@ footer {
   }
   100% {
     opacity: 1;
-  } 
+  }
 }
 @keyframes fadeInDown {
   0% {
@@ -590,5 +610,3 @@ footer {
     transform: translateY(0);
   }
 }
-
-
