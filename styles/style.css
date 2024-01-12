@@ -1,139 +1,196 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 body {
   letter-spacing: -0.5px;
+  font-family: "iranyekanwebregular";
 }
 header {
-  position: sticky;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.72);
-  backdrop-filter: blur(20px);
-  width: 1170px;
-  margin: 0 auto;
-  padding: 21px 0 15px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  /* background-color: antiquewhite; */
+  align-items: center;
+  width: 1170px;
+  margin: auto;
+  padding: 21px 0;
+  background-color: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(20px);
+  transition: all 0.5s ease;
+  position: sticky;
+  top: 0;
 }
-.zarin-logo {
-  margin-right: 22px;
+header.scrolled {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  margin: 5px 28px;
 }
 .nav-list {
   display: flex;
   align-items: center;
+  list-style-type: none;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 .nav-list li {
-  list-style-type: none;
-  margin-left: 22px;
-  font-family: "YekanBakhMedium";
-  font-size: 14px;
-  font-weight: 500;
+  margin: 0 15px;
 }
 .nav-list li a {
   text-decoration: none;
   color: #303030;
+  font-size: 14px;
 }
-.drop-down-nav img {
-  width: 7px;
-  margin-right: 5px;
-}
-.nav-list li:last-child {
-  background-color: rgba(232, 239, 254, 0.6);
-  font-family: "YekanBakhBold";
-  padding: 10px 26px;
-  margin-right: 20px;
-  /* margin-left: 5px; */
-  border-radius: 20px;
-}
-.nav-list li:last-child a {
+.nav-btn a {
   color: #28457b;
+  background-color: rgba(232, 239, 254, 0.6);
+  border-radius: 20px;
+  padding: 10px 27px;
+  font-family: "YekanBakhBold";
 }
-.nav-list li:last-child:hover {
+.nav-btn a:hover {
   background-color: #fbf6d9;
 }
-
-.burgur-menu {
-  /* background-color: aquamarine; */
-  width: 692px;
+.drop-down-nav img {
+  width: 8px;
+  margin-right: 8px;
+}
+#show-more-menu img {
+  width: 8px;
+  margin-right: 8px;
+}
+#show-more-menu {
+  position: relative;
+}
+#show-more-menu ul {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  background-color: #fff;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  padding: 20px 0 10px;
+  margin-top: 23px;
+  list-style: none;
+  width: 123px;
   display: none;
+  cursor: pointer;
 }
-.top-div {
-  padding: 20px 20px 30px;
-  display: flex;
-  justify-content: flex-end;
+#show-more-menu li {
+  margin: 0;
+  padding: 10px 20px;
 }
-.top-div img {
+#show-more-menu li:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+}
+#show-more-menu li a {
+  font-size: 0.8rem;
+  color: #303030;
+  letter-spacing: -0.9px;
+}
+#show-product-menu {
+  position: relative;
+}
+.product-menu {
+  position: absolute;
+  top: 0;
+  left: -135px;
+  background-color: #fff;
+  display: none;
+  justify-content: space-between;
+  width: 385px;
+  border-top: 5px solid #f8e88b;
+  border-radius: 12px;
+  padding-top: 5px;
+  margin-top: 23px;
+}
+.product-menu a p:first-child {
+  color: #000;
+  font-size: 0.95rem;
+}
+.product-menu a p:last-child {
+  color: #000;
+  font-size: 0.6rem;
+}
+.product-menu a {
+  margin: 10px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+.product-menu a:hover {
+  background-color: rgba(232, 239, 254, 0.6);
+}
+/* hamburger-menu-section */
+.hamburger-icon {
+  width: 27px;
+  display: none;
+  margin-left: 5px;
+}
+.cross-icon {
+  padding: 25px 0;
+  width: 100%;
+  text-align: left;
+}
+.cross-icon img {
   width: 20px;
+  margin-left: 30px;
 }
-.items {
-  padding: 30px 15px 15px;
+.hamburger-menu {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+  transform: translateY(-100%);
+  font-family: "yekanBakhMedium";
 }
-.items li {
+.hamburger-menu-items {
+  padding: 20px 30px;
+}
+.hamburger-menu-items li {
   list-style-type: none;
-  font-family: "iranyekanwebregular";
-  /* margin-bottom: 15px; */
-  padding: 8px 0;
 }
-.items li a {
+.hamburger-menu-items li a {
   text-decoration: none;
-  color: #333;
+  color: black;
+  display: inline-block;
+  padding: 3px 0;
+  font-family: "YekanBakhMedium"
 }
-.items .horizontal-line {
+.hamburger-menu-items .horizontal-line {
   background-color: #dfe1e4;
   height: 1px;
   width: 90%;
   margin: 8px 0;
 }
-.bottom-div {
+.more-item {
   background-color: #eee;
-  padding: 20px 30px;
+  padding: 20px 50px;
   display: flex;
   align-items: center;
 }
-.bottom-div a {
+.more-item a {
   color: #28457b;
   font-family: "iranyekanwebmedium";
   text-decoration: none;
-  font-size: 16px;
+  font-size: 0.85rem;
 }
-.bottom-div img {
-  margin: 4px 3px 0 0;
+.more-item img {
+width: 15px;
+  margin-right: 5px;
 }
-.product-items {
-  /* background-color: antiquewhite; */
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* align-content:space-between; */
-  row-gap: 15px;
-  padding: 15px;
-  font-family: "iranyekanwebmedium";
-  color: #303030;
-  width: 400px;
-  font-size: 10px;
-  font-weight: 300;
-  border-radius: 15px;
-  letter-spacing: -0.5px;
-  box-shadow: 0 -5px 0 #ffe422;
-  margin-top: 15px;
-  display: none;
-}
-.product-items div {
-  width: 50%;
-}
-.product-items span {
-  display: block;
-}
-
 .banner {
-  width: 1170px;
+  width: auto;
   background-image: linear-gradient(135deg, #21254e, #2b4a83);
   border-radius: 20px;
-  margin: 15px auto;
+  margin: 10px auto;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -510,59 +567,28 @@ footer {
 .footer-left .signiture {
   text-align: center;
   display: inline-block;
-  margin: 30px auto 0 ;
+  margin: 30px auto 0;
+}
+.show-hamburger-menu {
+  animation: fadeInDown 0.25s forwards;
+}
+@keyframes showUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@media (max-width: 1200px) {
-  header,
-  .banner {
-    width: 940px;
-  }
-  .zarin-logo {
-    margin-right: 0;
-  }
-  .banner {
-    padding: 40px 30px 20px;
-  }
-  .banner .left-banner img {
-    width: 400px;
-  }
-}
-@media (max-width: 990px) {
-  .nav-list li:last-child {
-    display: none;
-  }
-  header {
-    width: auto;
-    padding: 29px 20px;
-  }
-  .zarin-logo {
-    margin: 0 20px;
-  }
-  .drop-down-nav li {
-    margin: 0 10px;
-  }
-  .banner {
-    width: 902px;
-  }
-  .banner .left-banner {
-    display: none;
-  }
-  .banner .right-banner {
-    width: 100%;
-    text-align: center;
-  }
-}
-@media (max-width: 768px) {
-  nav {
-    display: none;
-  }
-  header {
-    padding: 10px 10px 15px 5px;
-    width: auto;
-  }
-  .zarin-logo::after {
-    content: url("../images/hamburger.svg");
-    width: 20px;
-  }
-}
+

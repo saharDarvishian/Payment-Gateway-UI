@@ -7,86 +7,104 @@
     <title>ارائه دهنده خدمات درگاه پرداخت اینترنتی |</title>
     <link rel="icon shortcut" href="./images/favicon.ico" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/responsive.css" />
     <link rel="stylesheet" href="./styles/fonts.css" />
   </head>
   <body>
     <header>
-      <img
-        class="zarin-logo"
-        src="./images/logo-white.svg"
-        alt="لوگوی زرین پال"
-      />
+      <div class="logo">
+        <img src="./images/logo-white.svg" alt="لوگوی زرین پال" />
+      </div>
       <nav>
         <ul class="nav-list">
-          <li class="drop-down-nav">
+          <li class="drop-down-nav" id="show-product-menu">
             <a href="#">محصولات</a>
             <img src="./images/down-arrow-svgrepo-com.svg" />
+            <div class="product-menu">
+              <div>
+                <a href="#">
+                  <p>درگاه پرداخت</p>
+                  <p>مهندسی شده برای رشد و فروش بیش‌تر</p>
+                </a>
+                <a href="#">
+                  <p>زرین‌کارت</p>
+                  <p>طلایی‌ترین کارتِ بانکی</p>
+                </a>
+                <a href="#">
+                  <p>عیان</p>
+                  <p>احراز هویت واقعی خریدار</p>
+                </a>
+                <a href="#">
+                  <p>استرداد وجه</p>
+                  <p>مبلغ تراکنش را در لحظه برگشت بزنید</p>
+                </a>
+              </div>
+
+              <div>
+                <a href="#">
+                  <p>زرین لینک</p>
+                  <p>لینک پرداخت در شبکه های اجتماعی</p>
+                </a>
+                <a href="#">
+                  <p>تسویه پیش از موعد</p>
+                  <p>دریافت موجودی قابل تسویه سریع ترین زمان</p>
+                </a>
+                <a href="#">
+                  <p>زرین پلاس</p>
+                  <p>ابزار هوشمند سوددهی</p>
+                </a>
+                <a href="#">
+                  <p>تسهیم فردایی</p>
+                  <p>تقسیم و واریز مبلغ به شرکای تجاری</p>
+                </a>
+              </div>
+            </div>
           </li>
           <li><a href="#">تعرفه‌ها</a></li>
           <li><a href="#">توسعه‌دهندگان</a></li>
           <li><a href="#">تماس با ما</a></li>
-          <li class="drop-down-nav">
+          <li id="show-more-menu">
             <a href="#">بیش‌تر</a>
             <img src="./images/down-arrow-svgrepo-com.svg" />
+            <ul>
+              <li><a href="#">وبلاگ</a></li>
+              <li><a href="#">دریافت شماره شبا</a></li>
+              <li><a href="#">سوالات متداول</a></li>
+              <li><a href="#">اپلیکیشن</a></li>
+              <li><a href="#">زرین‌بین</a></li>
+            </ul>
           </li>
-          <li><a href="#">زرین پال من</a></li>
+          <li class="nav-btn"><a href="#">زرین پال من</a></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <div class="burgur-menu">
-        <div class="top-div">
+      <img class="hamburger-icon" src="./images/hamburger.svg">
+      <div class="hamburger-menu">
+        <div class="cross-icon">
           <img src="./images/cross.svg" />
         </div>
-        <ul class="items">
+        <div class="hamburger-menu-items">
+         <ul>
           <li><a href="#">تعرفه‌ها</a></li>
           <li><a href="#">اپلیکیشن</a></li>
           <div class="horizontal-line"></div>
           <li><a href="#">سوالات متداول</a></li>
           <li><a href="#">محصولات</a></li>
           <li><a href="#">تماس با ما</a></li>
-        </ul>
-        <div class="bottom-div">
+         </ul>
+        </div>
+        
+        <div class="more-item">
           <a href="#">زرین پال من</a>
           <img src="./images/arrow.svg" />
         </div>
       </div>
-      <div class="product-items">
-        <div>
-          <span>درگاه پرداخت</span>
-          <span>مهندسی شده برای رشد و فروش بیش‌تر</span>
-        </div>
-        <div>
-          <span> زرین‌کارت</span>
-          <span>طلایی‌ترین کارتِ بانکی</span>
-        </div>
-        <div>
-          <span>عیان</span>
-          <span>احراز هویت واقعی خریدار</span>
-        </div>
-        <div>
-          <span>استرداد وجه</span>
-          <span>مبلغ تراکنش را در لحظه برگشت بزنید</span>
-        </div>
-        <div>
-          <span>زرین لینک</span>
-          <span>لینک پرداخت در شبکه های اجتماعی</span>
-        </div>
-        <div>
-          <span>تسویه پیش از موعد </span>
-          <span>دریافت موجودی قابل تسویه سریع ترین زمان </span>
-        </div>
-        <div>
-          <span>زرین پلاس </span>
-          <span>ابزار هوشمند سوددهی </span>
-        </div>
-        <div>
-          <span>تسهیم فردایی </span>
-          <span>تقسیم و واریز مبلغ به شرکای تجاری</span>
-        </div>
-      </div>
-      <div class="banner">
+    </header>
+    <div style="background-color: blue; height:5000px"></div>
+    <main>
+
+      
+
+      <!-- <div class="banner">
         <div class="right-banner">
           <span>بیش از ۱۳ سال</span>
           <span>انتخاب مطمئنِ کسب و کارهای آنلاین</span>
@@ -106,6 +124,7 @@
           <img src="./images/home.svg" />
         </div>
       </div>
+
       <div class="cards">
         <div class="img-box-right">
           <img class="img1" src="./images/pg.svg" />
@@ -351,7 +370,8 @@
           <img class="signiture" src="#" />
         </div>
       </footer>
-    </main>
-    <script src="./js/script.js"></script>
+    </main> -->
+
+   <script src="./js/script.js"></script>
   </body>
 </html>

@@ -1,20 +1,13 @@
 @media (max-width: 1200px) {
-    header,
-    .banner {
+    header {
       width: 940px;
     }
     .zarin-logo {
       margin-right: 0;
     }
-    .banner {
-      padding: 40px 30px 20px;
-    }
-    .banner .left-banner img {
-      width: 400px;
-    }
   }
   @media (max-width: 990px) {
-    .nav-list li:last-child {
+    .nav-btn {
       display: none;
     }
     header {
@@ -23,19 +16,6 @@
     }
     .zarin-logo {
       margin: 0 20px;
-    }
-    .drop-down-nav li {
-      margin: 0 10px;
-    }
-    .banner {
-      width: 902px;
-    }
-    .banner .left-banner {
-      display: none;
-    }
-    .banner .right-banner {
-      width: 100%;
-      text-align: center;
     }
   }
   @media (max-width: 768px) {
@@ -50,5 +30,9 @@
       content: url("../images/hamburger.svg");
       width: 20px;
     }
+    .hamburger-icon {
+      display: block;
+    }
   }
+
   
