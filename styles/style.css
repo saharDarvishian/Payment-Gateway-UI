@@ -189,6 +189,7 @@ header.scrolled {
   width: 15px;
   margin-right: 5px;
 }
+/* ---------------------------------------------------------- */
 /* banner section */
 .banner {
   width: 1050px;
@@ -261,6 +262,7 @@ header.scrolled {
   position: relative;
   top: -60px;
 }
+/* ----------------------------------------------------------- */
 /* card section */
 .cards {
   width: 1170px;
@@ -274,7 +276,7 @@ header.scrolled {
 
 .text-box {
   width: 50%;
-  padding-left: 80px;
+  padding-left:80px;
   /* border: 1px solid black; */
 }
 .text-box h2:first-child {
@@ -306,7 +308,9 @@ header.scrolled {
 .card-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-top: 25px;
+  /* border: 1px solid black; */
 }
 .card-btn a {
   text-decoration: none;
@@ -327,10 +331,11 @@ header.scrolled {
   background-color: rgba(232, 239, 254, 0.6);
   color: #28457b;
   display: flex;
+  align-items: center;
   border-radius: 10px;
   padding: 7px 14px;
   font-family: "iranyekanwebmedium";
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 .card-btn a:last-child img {
   /* padding-top: 10px; */
@@ -345,8 +350,11 @@ header.scrolled {
   width: 50%;
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: flex-end;
   /* border: 1px solid black; */
+}
+.img-box-right {
+  justify-content: flex-start;
 }
 
 .img1 {
@@ -369,7 +377,7 @@ header.scrolled {
   /* margin-right: -90px; */
 }
 .img4 {
-  width: 500px;
+  width: 550px;
   height: 380px;
   /* border: 1px solid black; */
 }
@@ -379,60 +387,64 @@ header.scrolled {
   /* border: 1px solid black; */
   /* margin-right: -90px; */
 }
+/* ----------------------------------------------------------- */
+/* features section */
 .features {
   display: flex;
   width: 1170px;
   margin: 32px auto;
+  justify-content: space-between;
   /* border: 1px solid black; */
 }
 .features-right {
   width: 35%;
   /* border: 1px solid black; */
 }
-.features-right h2 {
+.features-right h3 {
   color: #303030;
-  font-size: 32px;
+  font-size: 2rem;
   font-family: "YekanBakhHeavy";
+  margin-top: 15px;
 }
 .features-right p {
   font-family: "YekanBakhMedium";
-  font-size: 16px;
+  font-size: 1rem;
   color: #303030;
   line-height: 40px;
-  margin-top: 48px;
-  padding-left: 100px;
+  margin-top: 40px;
+  width: 85%;
 }
 .features-left {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   padding: 30px;
-  width: 65%;
+  width: 60%;
   /* border: 1px solid black; */
 }
 .title {
   display: flex;
   align-items: center;
 }
-.div1,
-.div2,
-.div3,
-.div4 {
-  /* width: 60%; */
+.grid {
+  padding: 25px 25px 15px 20px;
   /* border: 1px solid black; */
-  /* border-bottom: 1px solid #e0e4e7; */
 }
-.div1,
-.div2 {
-  border-bottom: 1px solid #e0e4e7;
-}
-.div1,
-.div3 {
+.div1 {
   border-left: 1px solid #e0e4e7;
 }
+.div2 {
+  border-bottom: 1px solid hsl(206, 13%, 89%);
+}
+.div3 {
+  border-top: 1px solid #e0e4e7;
+}
+.div4 {
+  border-right: 1px solid #e0e4e7;
+}
+
 /* .border-left {border-left: 1px solid #e0e4e7;} */
 .features-left img {
-  width: 50px;
+  width: 60px;
 }
 .features-left span {
   color: #303030;
@@ -442,13 +454,12 @@ header.scrolled {
 }
 .features-left p {
   font-family: "YekanBakhMedium";
-  font-size: 16px;
+  font-size: 1rem;
   color: #303030;
   line-height: 36px;
-  margin-top: 21px;
-  max-width: 300px;
+  margin: 20px 0 20px 10px;
   margin-bottom: 41px;
-  color: #2d3436;
+  /* border: 1px solid black; */
 }
 .join-us {
   width: 1170px;
