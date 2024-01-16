@@ -20,6 +20,7 @@ header {
   transition: all 0.5s ease;
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 header.scrolled {
   padding: 10px 0;
@@ -233,7 +234,6 @@ header.scrolled {
   font-family: "YekanBakhBold";
 }
 .banner-button a:last-child {
-  color: #fff;
   background-color: #435a8a;
   padding: 6px 14px;
   color: #fff;
@@ -265,18 +265,17 @@ header.scrolled {
 .cards {
   width: 1170px;
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
   margin: auto;
-  padding: 50px 0 50px;
-  /* height: 400px; */
+  padding: 50px 0;
   /* border: 1px solid black; */
 }
 
 .text-box {
   width: 50%;
-  /* border: 1px solid black; */
   padding-left: 80px;
+  /* border: 1px solid black; */
 }
 .text-box h2:first-child {
   margin-bottom: 5px;
@@ -330,9 +329,8 @@ header.scrolled {
   display: flex;
   border-radius: 10px;
   padding: 7px 14px;
-  font-family: "YekanBakhMedium";
-  font-size: 14px;
-  font-weight: 600;
+  font-family: "iranyekanwebmedium";
+  font-size: .9rem;
 }
 .card-btn a:last-child img {
   /* padding-top: 10px; */
@@ -346,27 +344,15 @@ header.scrolled {
   /* background-color: #fbf6d9; */
   width: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  /* padding-top: 50px; */
   /* border: 1px solid black; */
-}
-.img-box-right {
-  justify-content: flex-start;
-  /* background-color:#ffd900; */
-}
-.img-box-left {
-  justify-content: flex-start;
 }
 
 .img1 {
-  width: 500px;
-  height: 500px;
-  /* border: 1px solid black; */
-  margin-right: -50px;
+  width: 450px;
+  height: 480px;
   margin-top: -50px;
-  /* border: 1px solid red;
-  background-color: #747480; */
 }
 .img2 {
   /* width: 500px;
@@ -375,20 +361,19 @@ header.scrolled {
   /* margin-right: -90px; */
   /* padding-top: 140px; */
 }
-.img-box .img3 {
+.img3 {
   width: 400px;
   /* height: 500px; */
   /* border: 1px solid black; */
   /* padding-bottom: -30px; */
   /* margin-right: -90px; */
 }
-.img-box .img4 {
+.img4 {
   width: 500px;
-  height: 500px;
+  height: 380px;
   /* border: 1px solid black; */
-  /* margin-right: -90px; */
 }
-.img-box .img5 {
+.img5 {
   /* width: 400px; */
   /* height: 500px; */
   /* border: 1px solid black; */
