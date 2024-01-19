@@ -1,20 +1,23 @@
 @media (max-width: 1200px) {
   header {
     width: 940px;
+    padding-bottom: 18px;
   }
-  .zarin-logo {
-    margin-right: 0;
+
+  .logo img {
+    margin-right: 10px;
   }
   .banner {
     width: 940px;
-    padding: 70px 30px 140px 30px;
     box-sizing: border-box;
+    padding: 30px 30px 140px 40px;
   }
   .banner-image img {
     width: 430px;
   }
   .cards {
     width: 940px;
+    margin-top: 70px;
     box-sizing: border-box;
   }
   .text-box {
@@ -83,7 +86,7 @@
     justify-content: flex-start;
   }
   .logo img {
-    margin: 5px 0;
+    margin: 5px 5px 0 0;
   }
   .nav-btn {
     display: none;
@@ -97,7 +100,7 @@
   .banner {
     width: auto;
     margin: 10px 40px;
-    padding: 40px 30px 120px 30px;
+    padding: 40px 30px 90px 30px;
   }
   .banner-image img {
     display: none;
@@ -119,6 +122,8 @@
     display: block;
     width: 100%;
     box-sizing: border-box;
+    margin-top: 20px 0;
+    letter-spacing: 0;
   }
   .text-box {
     padding: 20px 30px 0;
@@ -135,6 +140,20 @@
   .img-box-left {
     justify-content: center;
     margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .img1 {
+    width: 463px;
+    height: 483px;
+  }
+  .img2 {
+    margin: 40px 0 0 0;
+    width: 577px;
+    height: 480px;
+  }
+  .img5 {
+    margin-top: -50px;
   }
   .features {
     width: auto;
@@ -143,7 +162,7 @@
     /* border: 1px solid red; */
   }
   .features-right {
-    padding: 0 30px;
+    padding: 0 50px;
     width: auto;
   }
   .features-left {
@@ -151,8 +170,16 @@
     padding: 0;
     margin: 30px;
   }
-  .features-left p {
-    margin-left: 0;
+  .features-right h3 {
+    font-size: 1.6rem;
+  }
+  .features-right p {
+    margin-top: 15px;
+    text-align: right;
+  }
+  .features-left .grid p {
+    padding-left: 20px;
+    /* border: 1px solid red; */
   }
   .grid {
     padding: 25px 0 10px;
@@ -171,9 +198,12 @@
     align-items: flex-start;
     /* border: 1px solid black; */
   }
+  .pipe {
+    margin: 0 12px;
+  }
   .support-right {
     margin: 30px 0 15px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     /* border: 1px solid green; */
   }
   .support-left {
@@ -184,15 +214,16 @@
     /* border: 1px solid red; */
   }
   .support .support-number {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .support .support-left span {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   footer {
     width: auto;
     padding: 50px 30px;
     flex-direction: column;
+    align-items: flex-start;
   }
   .footer-right {
     margin-bottom: 20px;
@@ -203,6 +234,7 @@
 @media (max-width: 768px) {
   header {
     padding: 12px 20px 12px 5px;
+    margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
   }
@@ -220,24 +252,36 @@
     display: block;
   }
   .banner {
-    margin: 0 7px;
+    margin: 0;
     padding: 40px 25px 100px 25px;
   }
   .go-down {
     bottom: 39px;
   }
-  .cards {
-    display: block;
-  }
   .text-box,
   .img-box-right {
     width: auto;
+  }
+  .img1 {
+    width: 463px;
+    height: 543px;
+  }
+  .img2 {
+    width: 452px;
+    height: 423px;
+  }
+  .img4,
+  .img5 {
+    display: none;
   }
   .cards {
     display: block;
     width: auto;
     margin: 0 40px;
-    padding: 20px 0;
+    padding: 10px 0;
+  }
+  .card-btn {
+    justify-content: center;
   }
   .text-box {
     text-align: center;
@@ -252,23 +296,51 @@
   .text-box p {
     font-size: 13px;
   }
-  .img4,
-  .img5 {
-    display: none;
-  }
   .features-right {
-    text-align: center;
+    margin-bottom: 50px;
+    width: auto;
+    padding: 0 60px;
+    /* border: 1px solid red; */
   }
   .features-right h3 {
-    font: 1.6rem;
+    text-align: center;
   }
-  .grid {
-    padding: 18px 0 20px 20px;
+  .features-right p {
+    margin-top: 20px;
+  }
+  .features-left {
+    width: auto;
     box-sizing: border-box;
+    padding: 0 10px;
+  }
+  .features-left .grid {
+    padding: 18px 0 20px;
+    box-sizing: border-box;
+    width: auto;
+    margin: 0;
+  }
+  .features-left .title span {
+    font-size: 24px;
+  }
+  .features-left .title {
+    margin-bottom: 15px;
   }
   .join-us {
-    margin: 40px 0 15px;
+    margin: 40px 10px 15px;
     box-sizing: border-box;
+  }
+  .join-us span:first-child {
+    font-size: 25px;
+  }
+  .join-us span:nth-last-child(2) {
+    font-size: 19px;
+  }
+  .support-right {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .pipe {
+    margin: 0 5px;
   }
   .footer-right {
     flex-wrap: wrap;
@@ -276,21 +348,29 @@
     justify-content: space-around;
   }
   .footer-right .colmn {
-    width:auto;
+    width: auto;
     margin-left: 70px;
     box-sizing: border-box;
     margin-left: 130px;
+    margin-bottom: 20px;
   }
 }
 
 /* ----------------------------------------------------------- */
 @media (max-width: 575px) {
+  .banner {
+    padding: 75px 40px 100px 40px;
+  }
   .banner-text h3 {
     font-size: 1.3rem;
     text-align: right;
+    padding-right: 10px;
   }
   .banner-text p {
     font-size: 1rem;
+    padding: 0 22px;
+    line-height: 2.3rem;
+    text-align: center;
   }
   .img1,
   .img2,
@@ -299,13 +379,16 @@
   .img5 {
     display: none;
   }
+  .text-box h2:nth-last-child(4) {
+    text-align: right;
+  }
   .features-left {
     grid-template-columns: 1fr;
-    width: auto;
     margin: auto;
   }
-  .grid {
-    padding: 10px 80px;
+  .features-left .grid {
+    padding: 10px 70px;
+    margin-top: 15px;
   }
   .features-right h3 {
     font-size: 1.6rem;
@@ -324,14 +407,25 @@
     align-items: flex-start;
     /* border: 1px solid red; */
   }
+  .footer-left {
+    text-align: center;
+  }
   .support .pipe {
     display: none;
   }
   .footer-right .colmn {
-    margin-left:  35px;
+    margin-left: 35px;
     margin-right: 35px;
   }
-  
+  .footer-left {
+    padding: 0;
+  }
+  .footer-left p {
+    font-size: 14px;
+  }
+  .footer-left div img {
+    width: 15px;
+  }
 }
 /* ---------------------------------------------------------- */
 @media (max-width: 465px) {
@@ -339,11 +433,38 @@
     flex-direction: column;
     justify-content: center;
   }
+  .cards {
+    width: auto;
+    padding: 0 10px;
+    margin: 0;
+  }
   .card-btn a:last-child {
     margin-top: 20px;
+  }
+  .text-box h2:nth-last-child(4) {
+    font-size: 24px;
+  }
+  .features-left .grid {
+    padding: 15px;
+  }
+  .features-left .grid span {
+    font-size: 1.1rem;
+  }
+  .features-right {
+    padding: 0 25px;
+    margin-top: 40px;
+  }
+  .features-right h3 {
+    font-size: 24px;
+  }
+  .grid .title {
+    margin-bottom: 15px;
   }
   .footer-right .colmn {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  .footer {
+    padding-right: 0;
   }
 }

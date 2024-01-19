@@ -4,7 +4,7 @@
   /* box-sizing: border-box; */
 }
 body {
-  letter-spacing: -0.5px;
+  letter-spacing: -0.4px;
   font-family: "iranyekanwebregular";
 }
 /* header section */
@@ -49,23 +49,20 @@ header.scrolled {
   font-size: 14px;
   font-family: "YekanBakhMedium";
 }
-.nav-btn a {
+.nav-list .nav-btn a {
   color: #28457b;
   background-color: rgba(232, 239, 254, 0.6);
   border-radius: 20px;
   padding: 10px 27px;
   font-family: "YekanBakhBold";
+  margin-right: 15px;
 }
 .nav-btn a:hover {
   background-color: #fbf6d9;
 }
-.drop-down-nav img {
+.arrow-bottom {
   width: 8px;
-  margin-right: 8px;
-}
-#show-more-menu img {
-  width: 8px;
-  margin-right: 8px;
+  margin-right: 4px;
 }
 #show-more-menu {
   position: relative;
@@ -192,7 +189,8 @@ header.scrolled {
 /* ---------------------------------------------------------- */
 /* banner section */
 .banner {
-  width: 1050px;
+  width: 1170px;
+  box-sizing: border-box;
   background-image: linear-gradient(135deg, #21254e, #2b4a83);
   border-radius: 20px;
   margin: 20px auto;
@@ -200,7 +198,7 @@ header.scrolled {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 60px 50px;
+  padding: 100px 65px 70px;
 }
 .banner-text {
   letter-spacing: -0.4px;
@@ -214,11 +212,16 @@ header.scrolled {
   font-family: "YekanBakhMedium";
   margin-top: 18px;
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   line-height: 2.5rem;
+}
+.banner-image {
+  margin-top: 50px;
+  /* border: 1px solid black; */
 }
 .banner-image img {
   width: 500px;
+  /* border: 1px solid black; */
 }
 .banner-button {
   margin-top: 60px;
@@ -270,14 +273,15 @@ header.scrolled {
   align-items: flex-start;
   justify-content: space-between;
   margin: auto;
-  padding: 50px 0;
+  padding: 28px 0;
   /* border: 1px solid black; */
 }
 
 .text-box {
   width: 50%;
   padding-left: 80px;
-  /* border: 1px solid black; */
+  /* border: 1px solid red; */
+  box-sizing: border-box;
 }
 .text-box h2:first-child {
   margin-bottom: 5px;
@@ -299,6 +303,7 @@ header.scrolled {
   text-align: justify;
   font-family: "YekanBakhMedium";
   letter-spacing: -0.5px;
+  /* padding-left: 30px; */
 }
 .horizontal-line {
   background-color: silver;
@@ -308,7 +313,7 @@ header.scrolled {
 .card-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 25px;
   /* border: 1px solid black; */
 }
@@ -320,11 +325,10 @@ header.scrolled {
   background: transparent linear-gradient(270deg, #ffd900, #ffe422) 0 0
     no-repeat padding-box;
   color: #000;
-  font-family: "YekanBakhMedium";
+  font-family: "iranyekanwebmedium";
   border-radius: 10px;
   font-size: 14px;
   padding: 7px 14px;
-  font-weight: 600;
   margin-left: 10px;
 }
 .card-btn a:last-child {
@@ -348,10 +352,11 @@ header.scrolled {
 .img-box-left {
   /* background-color: #fbf6d9; */
   width: 50%;
+  box-sizing: border-box;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  /* border: 1px solid black; */
+  /* border: 1px solid red; */
 }
 .img-box-right {
   justify-content: flex-start;
@@ -363,11 +368,10 @@ header.scrolled {
   margin-top: -50px;
 }
 .img2 {
-  /* width: 500px;
-  height: 500px; */
-  /* border: 1px solid black; */
-  /* margin-right: -90px; */
-  /* padding-top: 140px; */
+  width: 680px;
+  height: 530px;
+  margin-top: -50px;
+  /* border: 1px solid red; */
 }
 .img3 {
   width: 400px;
@@ -382,23 +386,22 @@ header.scrolled {
   /* border: 1px solid black; */
 }
 .img5 {
-  /* width: 400px; */
-  /* height: 500px; */
-  /* border: 1px solid black; */
-  /* margin-right: -90px; */
+  margin-top: 20px;
 }
 /* ----------------------------------------------------------- */
 /* features section */
 .features {
   display: flex;
   width: 1170px;
-  margin: 32px auto;
+  margin: 45px auto;
   justify-content: space-between;
   /* border: 1px solid black; */
+  box-sizing: border-box;
 }
 .features-right {
   width: 35%;
   /* border: 1px solid black; */
+  box-sizing: border-box;
 }
 .features-right h3 {
   color: #303030;
@@ -420,14 +423,20 @@ header.scrolled {
   padding: 30px;
   width: 60%;
   /* border: 1px solid black; */
+  box-sizing: border-box;
 }
+
 .title {
   display: flex;
   align-items: center;
 }
-.grid {
+.features-left .grid {
   padding: 25px 25px 15px 20px;
   /* border: 1px solid black; */
+  box-sizing: border-box;
+}
+.features-left .grid .title {
+  margin-bottom: 20px;
 }
 .div1 {
   border-left: 1px solid #e0e4e7;
@@ -457,8 +466,7 @@ header.scrolled {
   font-size: 1rem;
   color: #303030;
   line-height: 36px;
-  margin: 20px 0 20px 10px;
-  margin-bottom: 41px;
+  margin: 20px 10 10px 41px;
   /* border: 1px solid black; */
 }
 .join-us {
@@ -508,16 +516,19 @@ header.scrolled {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* border: 1px solid black; */
 }
 .support-right {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  /* border: 1px solid red; */
 }
 .support-right {
   font-family: "yekanBakhHeavy";
   font-size: 20px;
   color: #303030;
+  /* border: 1px solid green; */
 }
 .support-right .support-number {
   color: #21457f;
@@ -582,8 +593,12 @@ footer {
 }
 .footer-left {
   /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
 }
-.footer-left span {
+.footer-left p {
   margin-bottom: 22px;
   font-size: 18px;
   color: #303030;
