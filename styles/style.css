@@ -276,7 +276,7 @@ header.scrolled {
 
 .text-box {
   width: 50%;
-  padding-left:80px;
+  padding-left: 80px;
   /* border: 1px solid black; */
 }
 .text-box h2:first-child {
@@ -495,7 +495,10 @@ header.scrolled {
   color: #000;
   font-size: 14px;
 }
+/* ------------------------------------------------ */
 .support {
+  width: 1170px;
+  box-sizing: border-box;
   background: #fbf6f1;
   border-radius: 35px;
   margin: 0 auto 50px;
@@ -506,28 +509,35 @@ header.scrolled {
   align-items: center;
   justify-content: space-between;
 }
-.support span {
+.support-right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.support-right {
   font-family: "yekanBakhHeavy";
   font-size: 20px;
   color: #303030;
 }
-.support-number {
+.support-right .support-number {
   color: #21457f;
   font-size: 24px;
   margin-right: 10px;
 }
-.support div:last-child span {
+.support .support-left span {
   color: #21457f;
   font-size: 22px;
   font-family: "yekanBakhBold";
 }
-.support div:last-child {
+.support .support-left {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  /* margin-right: 10px; */
 }
-.support div:last-child img {
+.support .support-left img {
   width: 22px;
-  margin-right: 10px;
+  margin-right: 0;
 }
 .pipe {
   margin: 0 20px;
@@ -535,20 +545,24 @@ header.scrolled {
   font-size: 20px;
   color: #303030;
 }
+/* ------------------------------------------------ */
 footer {
   width: 1170px;
   display: flex;
   justify-content: space-between;
   margin: 50px auto 150px;
+  /* border: 1px solid black; */
 }
 .footer-right {
   display: flex;
   justify-content: space-between;
+  /* border: 1px solid black; */
 }
 .footer-right .colmn {
   display: flex;
   flex-direction: column;
   margin-left: 90px;
+  /* border: 1px solid black; */
 }
 .colmn span {
   font-size: 20px;
@@ -565,6 +579,9 @@ footer {
   font-size: 16px;
   font-family: "YekanBakhMedium";
   line-height: 40px;
+}
+.footer-left {
+  /* border: 1px solid black; */
 }
 .footer-left span {
   margin-bottom: 22px;

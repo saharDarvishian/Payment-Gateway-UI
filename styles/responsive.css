@@ -46,6 +46,25 @@
     width: 940px;
     box-sizing: border-box;
   }
+  .support {
+    width: 940px;
+  }
+  .support-right {
+    font-size: 1rem;
+  }
+  .support .support-number {
+    font-size: 1.2rem;
+  }
+  .support .support-left span {
+    font-size: 1rem;
+  }
+  footer {
+    width: 940px;
+    box-sizing: border-box;
+  }
+  .footer-right .colmn {
+    margin-left: 50px;
+  }
 }
 
 /* ------------------------------------------------------ */
@@ -144,6 +163,40 @@
     margin: 50px 30px 20px;
     /* box-sizing: border-box; */
   }
+  .support {
+    flex-direction: column;
+    width: auto;
+    margin: 0 40px;
+    background-color: #fff;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+  }
+  .support-right {
+    margin: 30px 0 15px;
+    font-size: 1.3rem;
+    /* border: 1px solid green; */
+  }
+  .support-left {
+    background: #fbf6f1;
+    width: 150px;
+    padding: 8px 15px;
+    border-radius: 40px;
+    /* border: 1px solid red; */
+  }
+  .support .support-number {
+    font-size: 1.4rem;
+  }
+  .support .support-left span {
+    font-size: 1.3rem;
+  }
+  footer {
+    width: auto;
+    padding: 50px 30px;
+    flex-direction: column;
+  }
+  .footer-right {
+    margin-bottom: 20px;
+  }
 }
 
 /* ----------------------------------------------------------- */
@@ -217,6 +270,17 @@
     margin: 40px 0 15px;
     box-sizing: border-box;
   }
+  .footer-right {
+    flex-wrap: wrap;
+    /* width: auto; */
+    justify-content: space-around;
+  }
+  .footer-right .colmn {
+    width:auto;
+    margin-left: 70px;
+    box-sizing: border-box;
+    margin-left: 130px;
+  }
 }
 
 /* ----------------------------------------------------------- */
@@ -255,6 +319,19 @@
   .join-us span:nth-last-child(2) {
     font-size: 16px;
   }
+  .support-right {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    /* border: 1px solid red; */
+  }
+  .support .pipe {
+    display: none;
+  }
+  .footer-right .colmn {
+    margin-left:  35px;
+    margin-right: 35px;
+  }
+  
 }
 /* ---------------------------------------------------------- */
 @media (max-width: 465px) {
@@ -264,5 +341,9 @@
   }
   .card-btn a:last-child {
     margin-top: 20px;
+  }
+  .footer-right .colmn {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
