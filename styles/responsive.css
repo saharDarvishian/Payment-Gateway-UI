@@ -460,6 +460,21 @@
   .grid .title {
     margin-bottom: 15px;
   }
+
+  .support-left span {
+    font-size: 0.9rem;
+  }
+
+  .support-right span {
+    font-size: 0.8rem;
+  }
+  
+  .footer-right {
+    margin-top: 60px;
+  }
+  .footer-right .column span {
+    margin-bottom: 10px;
+  }
   .footer-right .colmn {
     margin-left: 20px;
     margin-right: 20px;
@@ -468,4 +483,3 @@
     padding-right: 0;
   }
 }
-
