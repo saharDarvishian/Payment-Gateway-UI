@@ -1,2 +1,1 @@
-Demo
-https://sahardarvishian.github.io/Zarinpal-Project/
+A sleek and responsive online payment gateway interface designed with HTML and CSS. Seamlessly integrate payment options, enhance user experience, and ensure secure transactions. The minimalist design prioritizes clarity and ease of use for both customers and businesses.
